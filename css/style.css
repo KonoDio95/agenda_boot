@@ -3,7 +3,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Playpen Sans', sans-serif;
+    font-family: 'Comic Neue', cursive;
+}
+img{
+    user-select: none;
 }
 
 .bg-cor-menu{
@@ -12,4 +15,7 @@
 
 #navbar-items .navbar-nav{
     display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    font-weight: bold;
 }
