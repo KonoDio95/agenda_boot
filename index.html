@@ -1,16 +1,18 @@
 <!DOCTYPE html>
-<html lang="pt_BR">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
-    <meta name="author" content="Eu">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, 
+        initial-scale=1.0, shrink-to-fit=no">
     <title>Agenda</title>
 
     <!-- Google Fonts - Comic Neue -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap"
+        rel="stylesheet">
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -20,117 +22,367 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
 
     <!-- Meu CSS -->
-    <link rel="stylesheet" href="/css/style.css">
-
+    <link rel="stylesheet" href="css/illegal.css">
+    <link rel="stylesheet" href="css/boots_alter.css">
 </head>
 
 <body>
-    <!-- Construção da barra de navegação -->
     <header>
+        <!-- Construção da barra de navegação -->
         <nav class="navbar navbar-expand-lg fixed-top bg-cor-menu">
-            <section class="container py-3">
-                <a href="/" class="navbar-brand">
-                    <img src="imgs/checklist.png" width="40em" alt="" class="img-fluid">
-                    <span>Agenda CRUD</span>
+            <section class="container py-2">
+                <a href="" class="navbar-brand">
+                    <img src="images/timetable.png" width="40rem" alt="Sumiu" class="img-fluid">
+                    <span class="fw-bold">AGENDA CRUD</span>
                 </a>
 
                 <!-- Definição do botão do menu hamburguer -->
-                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-items"
-                    aria-current="navbar" aria-controls="navbar-items" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <i class="bi bi-list"></i>
-                </button>
+                <i class="bi bi-liste navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-items"
+                aria-current="navbar" aria-controls="navbar-items" aria-expanded="false"
+                aria-label="Toggle navigation"></i>
 
+                <!-- Definindo os itens do menu -->
                 <section class="collapse navbar-collapse" id="navbar-items">
-                    <ul class="navbar-nav me-auto mb-0 mb-lg-0 d-flex justify-content-end">
-                        <li class="nav-item"><a href="" class="nav-link">Home</a></li>
-                        <li class="nav-item"><a href="" class="nav-link">View</a></li>
-                        <li class="nav-item"><a href="" class="nav-link">Sobre</a></li>
-                        <li class="nav-item"><a href="" class="nav-link">Ajuda</a></li>
+                    <ul class="navbar-nav me-auto mb-0 mb-lg-0">
+                        <li class="nav-item"><a href="" class="nav-link fw-bold">Home</a></li>
+                        <li class="nav-item"><a href="" class="nav-link fw-bold">Operações CRUD</a></li>
+                        <li class="nav-item"><a href="" class="nav-link fw-bold">Sobre</a></li>
+                        <li class="nav-item"><a href="" class="nav-link fw-bold">Contato</a></li>
                     </ul>
                 </section>
             </section>
         </nav>
     </header>
 
-    <main class="container">
+    <main class="container-fluid mt-3">
 
-        <!-- Slider -->
-        <section class="container" id="slider-container">
-            <section id="slider" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
+        <!-- Início do slide -->
+        <section class="container" id="container-slider">
+            <section class="carousel slide" id="slider" data-bs-ride="carousel" data-bs-interval="1500">
                 <section class="carousel-indicators">
-                    <button 
-                    type="button" 
-                    class="active" 
-                    data-bs-target="#slider" 
-                    data-bs-slide-to="0"
-                    aria-current="true" 
-                    aria-label="Slide 1"
-                        >
-                    </button>
 
-                    <button 
-                    type="button" 
-                    class="active" 
-                    data-bs-target="#slider" 
-                    data-bs-slide-to="1"
-                    aria-current="true" 
-                    aria-label="Slide 2"
-                        >
-                    </button>
+                    <button type="button" class="active" data-bs-target="#slider" data-bs-slide-to="0"
+                        aria-current="true" aria-label="Slide 1"></button>
 
-                    <button 
-                    type="button" 
-                    class="active" 
-                    data-bs-target="#slider" 
-                    data-bs-slide-to="2"
-                    aria-current="true" 
-                    aria-label="Slide 3"
-                        >
-                    </button>
+                    <button type="button" data-bs-target="#slider" data-bs-slide-to="1" aria-label="Slide 2"></button>
+
+                    <button type="button" data-bs-target="#slider" data-bs-slide-to="2" aria-label="Slide 3"></button>
                 </section>
 
                 <section class="carousel-inner">
                     <section class="carousel-item active">
-                        <img src="imgs/retro-computer-abstract.jpg" alt="Compiuter" class="d-block w-100">
+                        <img src="images/persons.jpg" alt="" class="d-block w-100">
                         <section class="carousel-caption">
-                            <a href="" class="btn btn-danger">
-                                <h4>Clique Aqui</h4>
-                            </a>
+                            <h4 class="title">Imagem 1</h4>
+                            <a href="" class="btn btn-primary">Saiba mais</a>
                         </section>
                     </section>
+
                     <section class="carousel-item">
-                        <img src="imgs/abstract-car.jpg" alt="Ônibus" class="d-block w-100">
+                        <img src="images/products.jpg" alt="" class="d-block w-100">
                         <section class="carousel-caption">
-                            <a href="" class="btn btn-danger">
-                                <h4>Clique Aqui</h4>
-                            </a>
+                            <h4 class="title">Imagem 2</h4>
+                            <a href="" class="btn btn-primary">Saiba mais</a>
                         </section>
                     </section>
+
                     <section class="carousel-item">
-                        <img src="imgs/capybara.jpg" alt="Onça" class="d-block w-100">
+                        <img src="images/stok.jpg" alt="" class="d-block w-100">
                         <section class="carousel-caption">
-                            <a href="" class="btn btn-danger">
-                                <h4>Clique Aqui</h4>
-                            </a>
+                            <h4 class="title">Imagem 3</h4>
+                            <a href="" class="btn btn-primary">Saiba mais</a>
                         </section>
                     </section>
                 </section>
 
-                <button class="carousel-control-prev" type="button" data-bs-target="#slider" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
+                <button class="carousel-control-prev" type="button" data-bs-target="#container-slider" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
                 </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#slider" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
+                <button class="carousel-control-next" type="button" data-bs-target="#container-slider" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
                 </button>
             </section>
         </section>
+        <!-- Fim do slider -->
 
+        <!-- Início do banner -->
+        <section class="container" id="container-banner">
+            <section class="row">
+
+                <section class="col-12">
+                    <h4 class="title text-uppercase">Definições CRUD</h4>
+                </section>
+
+                <section class="col-12 col-md-3 my-1">
+                    <section class="card h-100">
+                        <section class="card-body texto">
+                            <i class="bi bi-plus-circle-fill"></i>
+                            <h4 class="card-title text-uppercase">CREATE - INSERIR</h4>
+                            <p class="card-text">
+                                Esta operação do CRUD realiza a inserção de novos itens em uma base de dados!
+                            </p>
+
+                            <!-- Button trigger modal -->
+
+                            <button type="button" class="btn btn-primary w-100" data-bs-toggle="modal"
+                                data-bs-target="#modalCreate">
+                                Inserir
+                            </button>
+                            <!-- <a href="" class="btn btn-outline-primary">Incluir</a>
+                            <a href="" class="btn btn-secondary">Salvar</a> -->
+
+                        </section>
+                    </section>
+                </section>
+
+                <section class="col-12 col-md-3 my-1">
+                    <section class="card h-100">
+                        <section class="card-body texto">
+                            <i class="bi bi-person-vcard-fill"></i>
+                            <h4 class="card-title text-uppercase">READ - VISUALIZAR</h4>
+                            <p class="card-text">
+                                Esta operação do CRUD realiza a visualização dos registros em uma base de dados!
+                            </p>
+
+                            <button class="btn btn-success w-100" data-bs-toggle="modal"
+                                data-bs-target="#modalView">Visualizar
+                            </button>
+                            <!-- <a href="" class="btn btn-outline-success">Ver</a>
+                            <a href="" class="btn btn-secondary">Exibir</a> -->
+
+                        </section>
+                    </section>
+                </section>
+
+                <section class="col-12 col-md-3 my-1">
+                    <section class="card h-100">
+                        <section class="card-body texto">
+                            <i class="bi bi-recycle"></i>
+                            <h4 class="card-title text-uppercase">UPDATE - ATUALIZAR</h4>
+                            <p class="card-text">
+                                Esta operação do CRUD realiza a atualização dos itens em uma base de dados!
+                            </p>
+
+                            <button class="btn btn-warning w-100" data-bs-toggle="modal"
+                            data-bs-target="#modalUpdate">Atualizar</button>
+                            <!-- <a href="" class="btn btn-warning">Alterar</a>
+                            <a href="" class="btn btn-outline-warning">Mudar</a>
+                            <a href="" class="btn btn-secondary">Trocar</a> -->
+                        </section>
+                    </section>
+                </section>
+
+                <section class="col-12 col-md-3 my-1">
+                    <section class="card h-100">
+                        <section class="card-body texto">
+                            <i class="bi bi-trash3-fill"></i>
+                            <h4 class="card-title text-uppercase">DELETE - EXCLUIR</h4>
+                            <p class="card-text">
+                                Esta operação do CRUD realiza a exclusão de itens em uma base de dados!
+                            </p>
+
+                            <button class="btn btn-danger w-100" data-bs-toggle="modal"
+                            data-bs-target="#modalDelete">Excluir</button>
+                            <!-- <a href="" class="btn btn-outline-danger">Apagar</a>
+                            <a href="" class="btn btn-secondary">Deletar</a> -->
+                        </section>
+                    </section>
+                </section>
+            </section>
+        </section>
     </main>
 
-    <footer></footer>
+
+    <!-- Área de modais -->
+
+    <!-- Modal Create -->
+    <section class="modal fade" id="modalCreate" tabindex="-1" aria-hidden="true">
+        <section class="modal-dialog modal-dialog-centered modal-lg">
+            <form class="modal-content">
+                <section class="modal-header">
+                    <h1 class="modal-title fs-5">INSERIR</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </section>
+                <section class="modal-body">
+                    <section class="mb-3 mt-3">
+                        <label class="fw-bold" for="name_it" class="form-label">Nome:</label>
+                        <input type="text" class="form-control" id="name_it" placeholder="Nome da tarefa" name="name_it" maxlength="60" required>
+                    </section>
+                    <section class="mb-3 mt-3">
+                        <label class="fw-bold" for="descr_it">Descrição:</label>
+                        <textarea class="form-control" rows="5" id="descr_it" placeholder="Descrição da tarefa" name="descr_it" required></textarea>
+                    </section>
+                    <section class="mb-3 mt-3">
+                        <label class="fw-bold" for="time_it">Prazo:</label>
+                        <input type="date" class="form-control" id="date_it" name="date_it">
+                    </section>
+                </section>
+                <section class="d-flex justify-content-between modal-footer">
+                    <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal">Fechar</button>
+                    <button type="reset" class="btn btn-outline-warning">Limpar</button>
+                    <button type="button" class="btn btn-outline-primary">Salvar</button>
+                </section>
+            </form>
+        </section>
+    </section>
+
+    <!-- Modal View -->
+    <section class="modal fade" id="modalView" tabindex="-1" aria-hidden="true">
+        <section class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-lg">
+            <section class="modal-content">
+                <section class="modal-header">
+                    <h1 class="modal-title fs-5">VISUALIZAR</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </section>
+                <section class="modal-body">
+                    <article class="card my-2">
+                        <section class="card-header d-flex justify-content-between align-items-center">
+                            <p class="fw-bold m-0">[NOME DA TAREFA]</p>
+                            <time class="fw-medium">[PRAZO DA TAREFA]</time>
+                        </section>
+                        <section class="card-body">
+                          <p class="card-text">[DESCRIÇÃO DA TAREFA]</p>
+                        </section>
+                    </article>
+                    <article class="card my-2">
+                        <section class="card-header d-flex justify-content-between align-items-center">
+                            <p class="fw-bold">[NOME DA TAREFA]</p>
+                        </section>
+                        <section class="card-body">
+                          <p class="card-text">[DESCRIÇÃO DA TAREFA]</p>
+                        </section>
+                    </article>
+                </section>
+                <section class="d-flex justify-content-around modal-footer">
+                    <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal">Fechar</button>
+                    <!-- <button type="button" class="btn btn-primary">Visualizar</button> -->
+                </section>
+            </section>
+        </section>
+    </section>
+
+    <!-- Modal Update -->
+    <section class="modal fade" id="modalUpdate" tabindex="-1" aria-hidden="true">
+        <section class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-lg">
+            <section class="modal-content">
+                <section class="modal-header">
+                    <h1 class="modal-title fs-5">ATUALIZAR</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </section>
+                <section class="modal-body">
+                    <article class="card my-2">
+                        <div class="card-header d-flex justify-content-between align-items-center">
+                            <p class="fw-bold m-0">[NOME DA TAREFA]</p>
+                            <time class="fw-medium">[PRAZO DA TAREFA]</time>
+                            <button class="btn btn-secondary btn-sm rounded update_t" data-index="index">
+                                <i class="bi bi-pencil-fill" data-bs-toggle="modal"
+                                data-bs-target="#modalFUpdate"></i>
+                            </button>
+                        </div>
+                        <div class="card-body">
+                          <p class="card-text">[DESCRIÇÃO DA TAREFA]</p>
+                        </div>
+                    </article>
+                    <article class="card my-2">
+                        <section class="card-header d-flex justify-content-between align-items-center">
+                            <p class="fw-bold">[NOME DA TAREFA]</p>
+                            <button class="btn btn-secondary btn-sm rounded update_t" data-index="index">
+                                <i class="bi bi-pencil-fill" data-bs-toggle="modal"
+                                data-bs-target="#modalFUpdate"></i>
+                            </button>
+                        </section>
+                        <section class="card-body">
+                          <p class="card-text">[DESCRIÇÃO DA TAREFA]</p>
+                        </section>
+                    </article>
+                </section>
+                <section class="d-flex justify-content-around modal-footer">
+                    <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal">Fechar</button>
+                </section>
+            </section>
+        </section>
+    </section>
+    <!-- Modal Form Update -->
+    <section class="modal fade" id="modalFUpdate" tabindex="0" aria-hidden="true">
+        <section class="modal-dialog modal-dialog-centered modal-lg">
+            <form class="modal-content">
+                <section class="modal-header">
+                    <h1 class="modal-title fs-5">ATUALIZAR</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </section>
+                <section class="modal-body">
+                    <input type="hidden" name="index_tarefa" value="[INDEX DA TAREFA]">
+                    <section class="mb-3 mt-3">
+                        <label class="fw-bold" for="name_it" class="form-label">Nome:</label>
+                        <input type="text" class="form-control" id="name_it" placeholder="Nome da tarefa" value="[NOME DA TAREFA]" name="name_it" maxlength="60" required>
+                    </section>
+                    <section class="mb-3 mt-3">
+                        <label class="fw-bold" for="descr_it">Descrição:</label>
+                        <textarea class="form-control" rows="5" id="descr_it" placeholder="Descrição da tarefa" name="descr_it" required>[DESCRIÇÃO DA TAREFA]</textarea>
+                    </section>
+                    <section class="mb-3 mt-3">
+                        <label class="fw-bold" for="time_it">Prazo:</label>
+                        <input type="date" class="form-control" id="date_it" name="date_it">
+                    </section>
+                </section>
+                <section class="d-flex justify-content-between modal-footer">
+                    <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal">Fechar</button>
+                    <button type="reset" class="btn btn-outline-warning">Limpar</button>
+                    <button type="button" class="btn btn-outline-primary">Salvar</button>
+                </section>
+            </form>
+        </section>
+    </section>
+
+    <!-- Modal Delete -->
+    <section class="modal fade" id="modalDelete" tabindex="-1" aria-hidden="true">
+        <section class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-lg">
+            <section class="modal-content">
+                <section class="modal-header">
+                    <h1 class="modal-title fs-5">EXCLUIR</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </section>
+                <section class="modal-body">
+                    <article class="card my-2">
+                        <div class="card-header d-flex justify-content-between align-items-center">
+                            <p class="fw-bold m-0">[NOME DA TAREFA]</p>
+                            <time class="fw-medium">[PRAZO DA TAREFA]</time>
+                            <button class="btn btn-danger btn-sm rounded del_t" data-index="index">
+                                <i class="bi bi-trash-fill"></i>
+                            </button>
+                        </div>
+                        <div class="card-body">
+                          <p class="card-text">[DESCRIÇÃO DA TAREFA]</p>
+                        </div>
+                    </article>
+                    <article class="card my-2">
+                        <section class="card-header d-flex justify-content-between align-items-center">
+                            <p class="fw-bold">[NOME DA TAREFA]</p>
+                            <button class="btn btn-danger btn-sm rounded del_t" data-index="index">
+                                <i class="bi bi-trash-fill"></i>
+                            </button>
+                        </section>
+                        <section class="card-body">
+                          <p class="card-text">[DESCRIÇÃO DA TAREFA]</p>
+                        </section>
+                    </article>
+                </section>
+                <section class="d-flex justify-content-around modal-footer">
+                    <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal">Fechar</button>
+                </section>
+            </section>
+        </section>
+    </section>
+
+    <footer class="py-3 my-4 bg-cor-menu">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-white">Home</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-white">Operações CRUD</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-white">Sobre</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-white">Contato</a></li>
+        </ul>
+        <p class="text-center text-white">AGENDA CRUD ©</p>
+    </footer>
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
@@ -138,7 +390,7 @@
         crossorigin="anonymous"></script>
 
     <!-- Meu JS -->
-    <script src="js/index.js"></script>
+    <script src="js/illegal.js"></script>
 </body>
 
 </html>
